@@ -18,28 +18,15 @@ contract SampleToken is ERC20, Ownable {
     // Mapping to store locked token balances for each address
     mapping(address => uint256) private _lockedBalances;
 
-    // {
-    //     "0xALex": "10000 ETH",
-    //     "0xDonald" : "20000 ETH",
-    //     "0xChisom" : "500000 ETH",
-    //     "0XLove" : "10000000000 eth"
-    // }
 
     // Mapping to track whitelisted addresses
     mapping(address => bool) private _isWhitelisted;
 
-    // {
-    //     "0xChisom" : "true",
-    //     "0XLove" : "false"
-    // }
 
     // Mapping to track blacklisted addresses
     mapping(address => bool) private _isBlacklisted;
 
-    // {
-    //     "0xChisom" : "true",
-    //     "0XLove" : "false"
-    // }
+  
 
     // --- Events ---
 
